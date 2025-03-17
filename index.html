@@ -1,111 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Insights - AI Horoscope</title>
+    <title>Horoskop AI - Váš osobný vesmírny sprievodca</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">Cosmic Insights</div>
+            <div class="logo">Horoskop AI</div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="active">Domov</a></li>
+                    <li><a href="#">O nás</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
             <section class="hero">
-                <h1>Discover Your Cosmic Path</h1>
-                <p>AI-powered personalized horoscopes that reveal your destiny</p>
-                <div class="gradient-button">Get Started</div>
+                <h1>Objavte svoju kozmickú cestu</h1>
+                <p>Personalizované horoskopy vytvorené umelou inteligenciou</p>
+                <div class="gradient-button">Začať</div>
             </section>
             
             <section class="selection-panel">
-                <h2>Customize Your Reading</h2>
+                <h2>Vytvorte si horoskop</h2>
                 <div class="options-grid">
                     <div class="option-card">
-                        <h3>Select Your Sign</h3>
+                        <h3>Vyberte znamenie</h3>
                         <div class="select-wrapper">
                             <select id="zodiac-sign">
-                                <option value="">Choose your sign</option>
-                                <option value="aries">Aries (Mar 21 - Apr 19)</option>
-                                <option value="taurus">Taurus (Apr 20 - May 20)</option>
-                                <option value="gemini">Gemini (May 21 - Jun 20)</option>
-                                <option value="cancer">Cancer (Jun 21 - Jul 22)</option>
-                                <option value="leo">Leo (Jul 23 - Aug 22)</option>
-                                <option value="virgo">Virgo (Aug 23 - Sep 22)</option>
-                                <option value="libra">Libra (Sep 23 - Oct 22)</option>
-                                <option value="scorpio">Scorpio (Oct 23 - Nov 21)</option>
-                                <option value="sagittarius">Sagittarius (Nov 22 - Dec 21)</option>
-                                <option value="capricorn">Capricorn (Dec 22 - Jan 19)</option>
-                                <option value="aquarius">Aquarius (Jan 20 - Feb 18)</option>
-                                <option value="pisces">Pisces (Feb 19 - Mar 20)</option>
+                                <option value="">Vyberte znamenie</option>
+                                <option value="aries">Baran (21.3. - 19.4.)</option>
+                                <option value="taurus">Býk (20.4. - 20.5.)</option>
+                                <option value="gemini">Blíženci (21.5. - 20.6.)</option>
+                                <option value="cancer">Rak (21.6. - 22.7.)</option>
+                                <option value="leo">Lev (23.7. - 22.8.)</option>
+                                <option value="virgo">Panna (23.8. - 22.9.)</option>
+                                <option value="libra">Váhy (23.9. - 22.10.)</option>
+                                <option value="scorpio">Škorpión (23.10. - 21.11.)</option>
+                                <option value="sagittarius">Strelec (22.11. - 21.12.)</option>
+                                <option value="capricorn">Kozorožec (22.12. - 19.1.)</option>
+                                <option value="aquarius">Vodnár (20.1. - 18.2.)</option>
+                                <option value="pisces">Ryby (19.2. - 20.3.)</option>
                             </select>
                         </div>
                     </div>
                     
                     <div class="option-card">
-                        <h3>Reading Type</h3>
+                        <h3>Typ čítania</h3>
                         <div class="radio-options">
                             <label>
                                 <input type="radio" name="reading-type" value="daily" checked>
-                                <span>Daily</span>
+                                <span>Denný</span>
                             </label>
                             <label>
                                 <input type="radio" name="reading-type" value="weekly">
-                                <span>Weekly</span>
+                                <span>Týždenný</span>
                             </label>
                             <label>
                                 <input type="radio" name="reading-type" value="monthly">
-                                <span>Monthly</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="reading-type" value="yearly">
-                                <span>Yearly</span>
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <div class="option-card">
-                        <h3>Focus Area</h3>
-                        <div class="checkbox-options">
-                            <label>
-                                <input type="checkbox" name="focus" value="love">
-                                <span>Love & Relationships</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" name="focus" value="career">
-                                <span>Career & Money</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" name="focus" value="health">
-                                <span>Health & Wellness</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" name="focus" value="personal">
-                                <span>Personal Growth</span>
+                                <span>Mesačný</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 
                 <div class="payment-section">
-                    <h3>Unlock Your Cosmic Insights</h3>
-                    <p>Premium AI-generated horoscope reading</p>
-                    <div class="price">$4.99</div>
-                    <button class="gradient-button payment-button">Pay & Generate Horoscope</button>
+                    <h3>Získajte svoj horoskop</h3>
+                    <p>Prémiové čítanie vytvorené umelou inteligenciou</p>
+                    <div class="price">4.99€</div>
+                    <button class="gradient-button payment-button">Zaplatiť a generovať</button>
                 </div>
             </section>
         </main>
         
         <footer>
-            <p>&copy; 2025 Cosmic Insights. All rights reserved.</p>
+            <p>&copy; 2025 Horoskop AI. Všetky práva vyhradené.</p>
         </footer>
     </div>
     

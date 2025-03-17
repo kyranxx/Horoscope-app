@@ -1,35 +1,33 @@
-# Cosmic Insights - AI Horoscope App
+# Horoskop AI - Aplikácia pre horoskopy
 
-A modern web application that provides AI-generated personalized horoscopes.
+Moderná webová aplikácia, ktorá poskytuje personalizované horoskopy generované umelou inteligenciou.
 
-## Features
+## Funkcie
 
-- Supabase-inspired dark theme design
-- Zodiac sign selection
-- Reading type options (daily, weekly, monthly, yearly)
-- Focus area selection
-- Payment integration (simulated)
-- Responsive design for all devices
+- Minimalistický dizajn inšpirovaný Supabase
+- Výber znamenia zverokruhu
+- Možnosti typu čítania (denné, týždenné, mesačné)
+- Simulácia platby
+- Responzívny dizajn pre všetky zariadenia
 
-## Tech Stack
+## Technológie
 
 - HTML5
-- CSS3 (with CSS variables)
+- CSS3 (s CSS premennými)
 - Vanilla JavaScript
 
-## Project Structure
+## Štruktúra projektu
 
-- `index.html` - Main HTML structure
-- `styles.css` - Styling with Supabase-inspired design
-- `app.js` - JavaScript functionality
+- `index.html` - Hlavná HTML štruktúra
+- `styles.css` - Štýlovanie s minimalistickým dizajnom
+- `app.js` - JavaScript funkcionalita
 
-## Future Enhancements
+## Budúce vylepšenia
 
-- AI integration for horoscope generation
-- Real payment processing
-- User accounts and saved readings
-- Additional customization options
+- Integrácia AI pre generovanie horoskopov
+- Skutočné spracovanie platieb
+- Používateľské účty a uložené čítania
 
-## Preview
+## Náhľad
 
-Open `index.html` in a browser to view the application.
+Otvorte `index.html` v prehliadači pre zobrazenie aplikácie.

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Get Started button scrolls to selection panel
+    // Začať button scrolls to selection panel
     const getStartedBtn = document.querySelector('.hero .gradient-button');
     const selectionPanel = document.querySelector('.selection-panel');
     
@@ -16,21 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (paymentButton && zodiacSelect) {
         paymentButton.addEventListener('click', () => {
             if (zodiacSelect.value === '') {
-                alert('Please select your zodiac sign');
+                alert('Prosím, vyberte svoje znamenie');
                 zodiacSelect.focus();
-                return;
-            }
-            
-            // Check if at least one focus area is selected
-            const focusCheckboxes = document.querySelectorAll('input[name="focus"]:checked');
-            if (focusCheckboxes.length === 0) {
-                alert('Please select at least one focus area');
                 return;
             }
             
             // In a real app, this would trigger the payment process
             // For now, just show a message
-            alert('This would connect to a payment processor in the full version');
+            alert('V plnej verzii by sa pripojilo k platobnému systému');
             
             // Simulate successful payment for demo purposes
             showSuccessMessage();
@@ -43,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         successMessage.className = 'success-message';
         successMessage.innerHTML = `
             <div class="success-icon">✓</div>
-            <h3>Payment Successful!</h3>
-            <p>Your personalized horoscope is being generated...</p>
+            <h3>Platba úspešná!</h3>
+            <p>Váš personalizovaný horoskop sa generuje...</p>
             <div class="loading-spinner"></div>
         `;
         
@@ -58,36 +51,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 transform: translate(-50%, -50%);
                 background-color: var(--bg-card);
                 border: 1px solid var(--border-color);
-                border-radius: 12px;
-                padding: 30px;
+                border-radius: 8px;
+                padding: 24px;
                 text-align: center;
                 z-index: 1000;
-                box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
-                max-width: 400px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                max-width: 360px;
                 width: 90%;
             }
             
             .success-icon {
                 background: var(--success);
                 color: white;
-                width: 60px;
-                height: 60px;
+                width: 48px;
+                height: 48px;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 30px;
-                margin: 0 auto 20px;
+                font-size: 24px;
+                margin: 0 auto 16px;
             }
             
             .loading-spinner {
-                width: 40px;
-                height: 40px;
-                border: 4px solid rgba(255, 255, 255, 0.1);
+                width: 32px;
+                height: 32px;
+                border: 3px solid rgba(255, 255, 255, 0.1);
                 border-radius: 50%;
-                border-top-color: var(--accent-gradient);
+                border-top-color: var(--accent-color);
                 animation: spin 1s linear infinite;
-                margin: 20px auto 0;
+                margin: 16px auto 0;
             }
             
             @keyframes spin {
@@ -103,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             successMessage.remove();
             // In a real app, this would show the generated horoscope
-            alert('In the full version, the AI-generated horoscope would appear here');
+            alert('V plnej verzii by sa tu zobrazil vygenerovaný horoskop');
         }, 3000);
     }
 });
